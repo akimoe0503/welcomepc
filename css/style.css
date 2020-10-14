@@ -212,7 +212,6 @@ footer .footer-right{
 	.img-box li{
 		margin-right: 30px;
 	}
-}
 
 /*タブレット用*/
 @media screen and (max-width: 960px){
@@ -221,6 +220,31 @@ footer .footer-right{
 
 /*スマホ用*/
 @media screen and (max-width: 480px){
+	body {
+		min-width: 375px;
+	}
+	/*header*/
+
+	/*welcome*/
+
+	/*curriculm*/
+	.subtittle{
+		font-size: 24px;
+	}
+
+.img-box{
+	flex-flow: column nowrap;
+}
+
+.imag-box li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 0;
+}
+	/*contact*/
+
+	/*footer*/
 
 }
 
