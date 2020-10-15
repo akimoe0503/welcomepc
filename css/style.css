@@ -258,6 +258,16 @@ footer .footer-right{
 
 }
 
+.img-box li:last-child {
+	margin-top: 20px;
+}
+
+.contact button {
+	font-size: 20px;
+	padding: 5px 40px;
+	margin-bottom: 20px;
+}
+
 }
 
 /*スマホ用*/
@@ -309,6 +319,8 @@ display: none;
 .btn:first-child {
 	margin-top: 0;
 }
+
+
 
 	/*curriculm*/
 .subtitle{
