@@ -186,6 +186,17 @@ header {
 .contact .form{
 	margin: 50px 0 40px;
 }
+
+.contact button {
+	background-color: #1dace0;
+	color: #fff;
+	border:3px solid #1dace0;
+	border-radius: 10px;
+	font-size: 24px;
+	padding: 15px 30px;
+	box-sizing: border-box;
+}
+
 /*---------contact　ここまで-----------*/
 
 /*---footer---*/
@@ -215,57 +226,85 @@ footer .footer-right{
 
 /*タブレット用*/
 @media screen and (max-width: 960px){
-	.img-box li{
-		display: flex;
-		flex-wrap: wrap;
+.img-box{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact .form{
+	flex-flow: column nowrap;
+	margin:30px 0;
+}
+
+.form .name, .form .email ,.form .inquiry {
+	width: 70%;
+}
+
+.form .name, .form .email {
+	height: 40px;
+}
+
+.form .inquiry{
+	height: 70px;
+}
+
+.form-left{
+	margin-right: 0;
+}
+
+
+.form-right{
+	margin-top: 20px;
+
+}
 
 }
 
 /*スマホ用*/
 @media screen and (max-width: 480px){
-	body {
-		min-width: 375px;
-	}
-	/*header*/
-	.icon {
-		margin-left: 20px;
-	}
+body {
+	min-width: 375px;
+}
+/*header*/
+.icon {
+	margin-left: 20px;
+}
 
-	.icon .name{
-		display: none;
-	}
+.icon .name{
+display: none;
+}
 
-	.header-right{
-		display: none;
-	}
+.header-right{
+	display: none;
+}
 
 	/*welcome*/
-	.title{
-		font-size: 30px;
-	}
+.title{
+	font-size: 30px;
+}
 
-	.guideline{
-		font-size: 24px;
-		margin-top: 30px;
-		font-weight: normal;
-	}
+.guideline{
+	font-size: 24px;
+	margin-top: 30px;
+	font-weight: normal;
+}
 
-	.btn-group{
-		display: flex;
-		flex-flow: column nowrap;
-		align-items: center;
-		margin-top: 40px;
-	}
+.btn-group{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin-top: 40px;
+}
 
-	.btn{
-		height: 48px;
-		width: 140px;
-		margin-left: 0;
-		margin-top: 20px;
-		font-size: 24px;
-		border-radius: 10px;
-		font-weight: bold;
-	}
+.btn{
+	height: 48px;
+	width: 140px;
+	margin-left: 0;
+	margin-top: 20px;
+	font-size: 24px;
+	border-radius: 10px;
+	font-weight: bold;
+}
 
 .btn:first-child {
 	margin-top: 0;
@@ -315,7 +354,6 @@ footer .footer-right{
 	height: 50px;
 }
 
-
 .form-left{
 	margin-right: 0;
 }
@@ -326,8 +364,23 @@ footer .footer-right{
 
 }
 
-	/*footer*/
+.contact button {
+	font-size: 20px;
+	padding: 5px 40px;
+}
 
+	/*footer*/
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+footer .icon {
+	display: none;
+}
+
+footer .footer-right {
+	margin-right: 0;
 }
 
 
