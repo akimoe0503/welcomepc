@@ -215,9 +215,11 @@ footer .footer-right{
 
 /*タブレット用*/
 @media screen and (max-width: 960px){
+	.img-box li{
+		display: flex;
+		flex-wrap: wrap;
 
 }
-
 
 /*スマホ用*/
 @media screen and (max-width: 480px){
@@ -270,7 +272,7 @@ footer .footer-right{
 }
 
 	/*curriculm*/
-.subtittle{
+.subtitle{
 	font-size: 24px;
 	}
 
@@ -296,6 +298,33 @@ footer .footer-right{
 }
 
 	/*contact*/
+.contact .form{
+	flex-flow: column nowrap;
+	margin:30px 0;
+}
+
+.form .name, .form .email ,.form .inquiry {
+	width: 80%;
+}
+
+.form .name, .form .email {
+	height: 30px;
+}
+
+.form .inquiry{
+	height: 50px;
+}
+
+
+.form-left{
+	margin-right: 0;
+}
+
+
+.form-right{
+	margin-top: 20px;
+
+}
 
 	/*footer*/
 
