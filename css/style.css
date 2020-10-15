@@ -218,6 +218,7 @@ footer .footer-right{
 
 }
 
+
 /*スマホ用*/
 @media screen and (max-width: 480px){
 	body {
@@ -277,12 +278,23 @@ footer .footer-right{
 	flex-flow: column nowrap;
 }
 
-.imag-box li{
+.img-box li{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-right: 0;
+	margin-top: 30px;
 }
+
+.img-box li:first-child{
+	margin-top: 0;
+}
+
+.img-box li span{
+	font-size: 16px;
+	margin-top: 20px;
+}
+
 	/*contact*/
 
 	/*footer*/
